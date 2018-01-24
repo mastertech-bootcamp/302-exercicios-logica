@@ -7,3 +7,15 @@
   Dica: Em javascript, os caracteres de uma string podem ser acessados usando a notação de vetor.
   Por exemplo: considerando que variável palavra contém a string "Xablau", o valor de palavra[2] é "b"
 */
+
+let frase = 'Colocar dois pratos de trigo para dois tigres tristres';
+let contador = 0;
+
+//toLowerCase() converte toda as letras maiúsculas da string para minúsculas
+for (let letra of frase.toLowerCase()) {
+  if (letra === 'a'){
+    contador++;
+  };
+};
+
+console.log(`Existem ${contador} a's dentro da frase`);
